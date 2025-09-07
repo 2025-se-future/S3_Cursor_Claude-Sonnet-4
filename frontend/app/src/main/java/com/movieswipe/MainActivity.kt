@@ -1,4 +1,4 @@
-package com.example.movieswipe
+package com.movieswipe
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.movieswipe.ui.theme.MovieSwipeTheme
+import com.movieswipe.ui.theme.MovieSwipeTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

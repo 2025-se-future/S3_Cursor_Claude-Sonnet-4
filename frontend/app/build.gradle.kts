@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.movieswipe"
+    namespace = "com.movieswipe"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.movieswipe"
+        applicationId = "com.movieswipe"
         minSdk = 33
         targetSdk = 36
         versionCode = 1

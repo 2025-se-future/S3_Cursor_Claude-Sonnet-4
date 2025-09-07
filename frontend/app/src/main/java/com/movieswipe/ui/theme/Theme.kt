@@ -1,4 +1,4 @@
-package com.example.movieswipe.ui.theme
+package com.movieswipe.ui.theme
 
 import android.app.Activity
 import android.os.Build

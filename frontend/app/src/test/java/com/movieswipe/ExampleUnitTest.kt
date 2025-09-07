@@ -1,4 +1,4 @@
-package com.example.movieswipe
+package com.movieswipe
 
 import org.junit.Test
 

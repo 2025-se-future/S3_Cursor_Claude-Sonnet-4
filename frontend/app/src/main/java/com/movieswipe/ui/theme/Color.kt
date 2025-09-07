@@ -1,4 +1,4 @@
-package com.example.movieswipe.ui.theme
+package com.movieswipe.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
