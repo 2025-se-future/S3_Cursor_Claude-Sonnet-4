@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
-import { Environment } from '../config/environment.js';
-import { UserModel } from '../models/users.js';
-import type { AuthTokenPayload, User } from '../types/user.js';
+import { Environment } from '../config/environment';
+import { UserModel } from '../models/users';
+import type { AuthTokenPayload, User } from '../types/user';
 
 // Extend Express Request interface to include user
 declare global {

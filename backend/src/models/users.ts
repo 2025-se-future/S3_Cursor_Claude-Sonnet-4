@@ -1,5 +1,5 @@
 import mongoose, { Schema, Document } from 'mongoose';
-import type { User as UserType } from '../types/user.js';
+import type { User as UserType } from '../types/user';
 
 // User document interface for MongoDB
 export interface UserDocument extends Omit<UserType, '_id'>, Document {
@@ -12,7 +12,6 @@ const userSchema = new Schema<UserDocument>({
     type: String,
     required: true,
     unique: true,
-    index: true,
   },
   email: {
     type: String,
@@ -20,7 +19,6 @@ const userSchema = new Schema<UserDocument>({
     unique: true,
     lowercase: true,
     trim: true,
-    index: true,
   },
   name: {
     type: String,
@@ -36,9 +34,7 @@ const userSchema = new Schema<UserDocument>({
   versionKey: false, // Disable __v field
 });
 
-// Indexes for performance
-userSchema.index({ googleId: 1 });
-userSchema.index({ email: 1 });
+// Additional indexes for performance
 userSchema.index({ createdAt: -1 });
 
 // Transform function to convert MongoDB document to clean JSON

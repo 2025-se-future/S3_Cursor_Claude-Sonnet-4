@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { Environment } from '../config/environment.js';
+import { Environment } from '../config/environment';
 
 // Error interface
 interface AppError extends Error {

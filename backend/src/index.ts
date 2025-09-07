@@ -2,9 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import mongoose from 'mongoose';
-import { Environment } from './config/environment.js';
-import userRoutes from './routes/users.js';
-import { errorHandler } from './middleware/error-handler.js';
+import { Environment } from './config/environment';
+import userRoutes from './routes/users';
+import { errorHandler } from './middleware/error-handler';
 
 const app = express();
 

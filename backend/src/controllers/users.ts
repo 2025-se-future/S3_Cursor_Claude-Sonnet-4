@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { UserService } from '../services/users.js';
-import { GoogleTokenSchema } from '../types/user.js';
-import type { AuthResponse } from '../types/user.js';
+import { UserService } from '../services/users';
+import { GoogleTokenSchema } from '../types/user';
+import type { AuthResponse } from '../types/user';
 
 export class UserController {
   // Sign in with Google

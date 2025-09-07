@@ -1,14 +1,14 @@
 import jwt from 'jsonwebtoken';
 import { OAuth2Client } from 'google-auth-library';
-import { UserModel } from '../models/users.js';
-import { Environment } from '../config/environment.js';
+import { UserModel } from '../models/users';
+import { Environment } from '../config/environment';
 import type {
   User,
   CreateUserInput,
   AuthTokenPayload,
   GoogleTokenPayload,
   AuthResponse,
-} from '../types/user.js';
+} from '../types/user';
 
 // Initialize Google OAuth client
 const googleClient = new OAuth2Client(Environment.GOOGLE_CLIENT_ID);
