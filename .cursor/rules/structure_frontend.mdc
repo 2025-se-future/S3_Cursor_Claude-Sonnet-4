@@ -1,0 +1,32 @@
+---
+description: This rule provides the structure for the frontend in Kotlin.
+alwaysApply: true
+---
+
+The structure of the frontend must comply with the following guidelines:
+
+# Frontend Structure
+
+Kotlin code of the frontend Android application is under `frontend/app/src/main/java/com/movieswipe`.
+
+In this folder
+
+- Organize the code by architectural layers into the following packages:
+
+```
+/app
+├── /ui                             # UI layer that presents data and handles user interactions.
+│      ├── /components    # UI elements shared between different features.
+│      ├── /screens           # UI elements on the screen for each of the features.
+│      ├── /viewmodels     # ViewModel classes that hold data, expose this data to the UI, and handle logic.
+│      ├── /navigation       # Screen transitions.
+│      └── /theme             # Theming files that define the app's visual design system including colors, typography, etc.
+├── /data                        # Data layer responsible for data access, storage, and management.
+│      ├── /local               # Data stored locally on the device (e.g., access token).
+│      ├── /remote           # Data fetched remotely (e.g., backend API calls).
+│      └── /repositories    # Data abstraction and a uniform interface to access data regardless of where it comes from (local database, remote API, cache, etc.)
+├── /di                            # Hilt dependency injection modules that define how to create and provide dependencies
+└── /utils                         # Common helpers, utilities, constants, and extension functions shared across the app.
+```
+
+- Inside `/screens`, `/viewmodels`, `/repositories` folders, organize files by the following domains: users, groups, voting, and movies.
