@@ -26,8 +26,13 @@ prompt 1.1.2
 
 **Frontend**
 
-- LLM_start: xx:xx
-- LLM_end: xx:xx
+prompt 1.2.1
+- LLM_start: 08:51
+- LLM_end: 08:56
+
+prompt 1.2.2
+- LLM_start: 08:58
+- LLM_end: 09:07
 
 
 ## 2. Manage Group
